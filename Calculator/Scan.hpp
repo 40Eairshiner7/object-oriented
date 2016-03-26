@@ -18,11 +18,13 @@ using namespace std;
 class Scan
 {
 private:
+    //用于接收键盘输入的四则运算表达式
     string input;
     string charString;
     
 public:
     queue<string> ToStringQueue(string input);
+    //判断数字是否过大用的标记
     bool tooBig;
 };
 
