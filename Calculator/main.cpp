@@ -18,8 +18,11 @@ int main() {
     string input;
     Scan m_scan;
     getline(cin,input);
+    
+    //先执行一次函数来计算布尔值决定下一步
     m_scan.ToStringQueue(input);
     
+    //有出现大于10位数的数字则报错，没有就输出队列
     if(m_scan.tooBig)
     {
         cout << "Error!Number not conform to the requirement.";
