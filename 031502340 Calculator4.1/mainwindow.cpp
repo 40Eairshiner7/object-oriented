@@ -190,8 +190,8 @@ void MainWindow::fileOpeDisappear() {
 
 void MainWindow::fileOperation(const char *i,const char *o) {
     string input="";
-    ofstream out(i, ios::out);
-    ifstream in(o, ios::in);
+    ofstream out(o, ios::out);
+    ifstream in(i, ios::in);
     if (in.is_open()) {
         while (getline(in,input)) {
             Scan m_scan;
